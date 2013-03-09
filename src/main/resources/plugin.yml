@@ -1,0 +1,9 @@
+name: ChestShop-notifications
+
+main: com.acrobot.chestshop.notifications.Notifications
+version: ${project.version}
+
+author: Acrobot
+description: A notification system for ChestShop 
+ 
+depend: [Notifications]
