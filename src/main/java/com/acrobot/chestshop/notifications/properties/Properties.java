@@ -1,6 +1,6 @@
-package com.acrobot.chestshop.notifications;
+package com.acrobot.chestshop.notifications.properties;
 
-import com.Acrobot.Breeze.Configuration.ConfigurationComment;
+import com.Acrobot.Breeze.Configuration.Annotations.ConfigurationComment;
 
 /**
  * @author Acrobot

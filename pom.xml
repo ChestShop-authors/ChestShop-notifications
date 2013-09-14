@@ -6,7 +6,7 @@
 
     <groupId>com.acrobot.chestshop.notifications</groupId>
     <artifactId>chestshop-notifications</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 
     <repositories>
         <repository>
@@ -23,17 +23,17 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.4.7-R1.0</version>
+            <version>1.6.2-R1.0</version>
         </dependency>
         <dependency>
             <groupId>com.acrobot.chestshop</groupId>
             <artifactId>chestshop</artifactId>
-            <version>3.50-t0052</version>
+            <version>3.64</version>
         </dependency>
         <dependency>
             <groupId>me.muizers.notifications</groupId>
             <artifactId>notifications</artifactId>
-            <version>1.1</version>
+            <version>1.4</version>
         </dependency>
     </dependencies>
 

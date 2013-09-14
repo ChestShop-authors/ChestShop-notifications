@@ -15,6 +15,7 @@ import org.bukkit.inventory.ItemStack;
 
 import static com.Acrobot.ChestShop.Events.TransactionEvent.TransactionType.BUY;
 import static com.Acrobot.ChestShop.Events.TransactionEvent.TransactionType.SELL;
+import static com.acrobot.chestshop.notifications.properties.Messages.*;
 
 /**
  * @author Acrobot
@@ -33,8 +34,13 @@ public class TransactionListener implements Listener {
             return;
         }
 
-        String firstLine = event.getClient().getName() + " bought " + parseItemInformation(event.getStock());
-        String secondLine = "from " + event.getOwner().getName() + " for " + Economy.formatBalance(event.getPrice());
+        String firstLine = BUY_TRANSACTION_FIRST_LINE
+                .replace("%client", event.getClient().getName())
+                .replace("%stock", parseItemInformation(event.getStock()));
+
+        String secondLine = BUY_TRANSACTION_SECOND_LINE
+                .replace("%owner", event.getOwner().getName())
+                .replace("%price", Economy.formatBalance(event.getPrice()));
 
         Notification notification = new Notification("ChestShop", firstLine, secondLine);
         notifications.showNotification(notification);
@@ -46,8 +52,13 @@ public class TransactionListener implements Listener {
             return;
         }
 
-        String firstLine = event.getClient().getName() + " sold " + parseItemInformation(event.getStock());
-        String secondLine = "to " + event.getOwner().getName() + " for " + Economy.formatBalance(event.getPrice());
+        String firstLine = SELL_TRANSACTION_FIRST_LINE
+                .replace("%client", event.getClient().getName())
+                .replace("%stock", parseItemInformation(event.getStock()));
+
+        String secondLine = SELL_TRANSACTION_SECOND_LINE
+                .replace("%owner", event.getOwner().getName())
+                .replace("%price", Economy.formatBalance(event.getPrice()));
 
         Notification notification = new Notification("ChestShop", firstLine, secondLine);
         notifications.showNotification(notification);

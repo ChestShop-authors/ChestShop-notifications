@@ -4,6 +4,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.acrobot.chestshop</groupId>
   <artifactId>chestshop</artifactId>
-  <version>3.50-t0052</version>
+  <version>3.64</version>
   <description>POM was created from install:install-file</description>
 </project>

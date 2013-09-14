@@ -3,10 +3,10 @@
   <groupId>com.acrobot.chestshop</groupId>
   <artifactId>chestshop</artifactId>
   <versioning>
-    <release>3.50-t0052</release>
+    <release>3.64</release>
     <versions>
-      <version>3.50-t0052</version>
+      <version>3.64</version>
     </versions>
-    <lastUpdated>20130309111841</lastUpdated>
+    <lastUpdated>20130914095147</lastUpdated>
   </versioning>
 </metadata>

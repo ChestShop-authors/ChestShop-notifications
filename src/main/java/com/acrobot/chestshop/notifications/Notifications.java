@@ -1,6 +1,8 @@
 package com.acrobot.chestshop.notifications;
 
 import com.Acrobot.Breeze.Configuration.Configuration;
+import com.acrobot.chestshop.notifications.properties.Messages;
+import com.acrobot.chestshop.notifications.properties.Properties;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -16,6 +18,7 @@ public class Notifications extends JavaPlugin {
         dataFolder = getDataFolder();
 
         Configuration.pairFileAndClass(loadFile("config.yml"), Properties.class);
+        Configuration.pairFileAndClass(loadFile("local.yml"), Messages.class);
 
         if (Properties.SHOW_NOTIFICATION_ON_TRANSACTION) {
             getServer().getPluginManager().registerEvents(new TransactionListener(), this);
